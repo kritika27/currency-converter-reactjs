@@ -10,7 +10,7 @@ function App() {
   const [toCurrency, setToCurrency] = useState();
   const [exchangeRate, setExchangeRate] = useState();
   const [amount, setAmount] = useState(1);
-  const [toAmount, setToAmount] = useState(1);
+  //const [toAmount, setToAmount] = useState(1);
 
   useEffect(() => {
     fetch(BASE_URL)
