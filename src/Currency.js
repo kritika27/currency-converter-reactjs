@@ -1,6 +1,6 @@
 import React from "react";
 
-const CurrencyRow = ({
+const Currency = ({
   currencyOptions,
   selectedCurrency,
   onChangeCurrency,
@@ -18,25 +18,30 @@ const CurrencyRow = ({
         value={amount}
         onChange={onChangeAmount}
       />
-      <select value={selectedCurrency} onChange={onChangeCurrency}>
+      <select
+        className="select"
+        value={selectedCurrency}
+        onChange={onChangeCurrency}
+      >
         {currencyOptions.map((option) => (
           <option key={option} value={option}>
             {option}
           </option>
         ))}
       </select>
-      <div className="equals">=</div>
-      <div>
-        <p>{toAmount}</p>
-        <select value={curr} onChange={onChangeToCurrency}>
-          {currencyOptions.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
+      <div className="equals">
+        <i className="fa fa-arrow-down"></i>
       </div>
+
+      <p style={{ color: "black" }}>{toAmount}</p>
+      <select className="select" value={curr} onChange={onChangeToCurrency}>
+        {currencyOptions.map((option) => (
+          <option key={option} value={option}>
+            {option}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };
-export default CurrencyRow;
+export default Currency;

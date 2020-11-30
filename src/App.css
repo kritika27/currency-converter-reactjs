@@ -5,9 +5,9 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  background: #141E30;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #c0392b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -15,30 +15,51 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   height: 200px;
   width: 500px;
   background: #e7e7e7;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+  padding:10px;
 }
 h1 {
   margin: 0;
   margin-bottom: .5rem;
-  text-shadow : -1px -1px 1px #fff, 1px 1px 1px #000 ; color : #8F0222; opacity : 0.3;
+  color:#243B55;
   font-size:35px;
   text-transform: uppercase;
   font-weight:20px;
 }
 
 .input {
-  border: 1px solid #333;
-  border-radius: .3em;
   padding: .25rem;
   width: 7em;
+  border:none;
+  outline:none;
+  background-color:lightgrey;
+  color:black;
 }
 
 select {
   margin-left: .5rem;
 }
 
+.select{
+  background-color:#243B55;
+  color:#fff;
+}
 .equals {
   font-weight: bold;
-  font-size: 2rem;
+  margin-top:10px;
+  font-size: 1.7rem; 
+}
+
+@media screen and (max-width:400px)
+{
+  
+    .box {
+      height: 200px;
+      width: 350px;
+  }
+  h1{
+    font-size:30px;
+  }
+ 
 }
