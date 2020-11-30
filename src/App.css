@@ -56,10 +56,11 @@ select {
   
     .box {
       height: 200px;
-      width: 350px;
+      width: 320px;
   }
   h1{
-    font-size:30px;
+    font-size:28px;
   }
  
 }
+
