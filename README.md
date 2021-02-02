@@ -6,11 +6,11 @@ This is a beginners' Currency Converter web application built using Html,CSS,Rea
 
 ## Demo
 
-Link 👉 To be added.
+Link 👉 https://friendly-payne-18ef0b.netlify.app/
 
 ## Screenshot
 
-To be added.
+![screenshot](https://user-images.githubusercontent.com/4997491/100646527-24147a00-3364-11eb-945e-44876fe4c194.JPG)
 
 ## Installation
 
