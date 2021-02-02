@@ -15,15 +15,11 @@ function App() {
     fetch(BASE_URL)
       .then((res) => res.json())
       .then((data) => {
-<<<<<<< HEAD
         var key = Object.keys(data.rates).sort(function order(key1, key2) {
           if (key1 < key2) return -1;
           else if (key1 > key2) return +1;
           else return 0;
         });
-=======
-        const firstCurrency = Object.keys(data.rates)[0];
->>>>>>> babbf3586fb427a62ef662ff2089889dacb2dbd9
 
         // Taking the object in 'temp' object
         // and deleting the original object.
